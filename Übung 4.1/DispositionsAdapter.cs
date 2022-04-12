@@ -9,6 +9,6 @@ public class DispositionsAdapter : IDisposition {
         ulong kontoNummer = b.GetKontoNummer();
         float betrag = b.GetBetrag();
 
-        return _DispositionsProgramm.Dispoiniere(kontoNummer, betrag) == 1;
+        return _DispositionsProgramm.Dispoiniere(kontoNummer, betrag) == 0;
     }
 }
