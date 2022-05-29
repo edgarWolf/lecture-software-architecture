@@ -1,0 +1,17 @@
+@page "/diceview"
+
+<h1>Dice View</h1>
+
+<h3>Current dice roll: @LatestRoll</h3>
+
+<h3>Latest 5 rolls: @string.Join(',', LatestFiveRolls.Select(roll => roll))</h3>
+
+<input type="number" @bind="@Low">
+<input type="number" @bind="@High">
+
+<button type="button" @onclick="RollDice">Roll dice</button>
+
+
+
+
+
